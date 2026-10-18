@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mg-dark: #1c1c1c;
+  --mg-dark-mid: #333333;
+  --mg-dark-light: #555555;
+  --mg-bg: #f5f4ef;
+  --mg-white: #ffffff;
+  --mg-border: #e0dfd9;
+  --mg-surface: #eeeee9;
+  --mg-text: #1c1c1c;
+  --mg-text-muted: #6b6b6b;
+  --mg-pass: #1c1c1c;
+  --mg-pass-bg: #eeeee9;
+  --mg-warn: #b45309;
+  --mg-warn-bg: #fef3c7;
+  --mg-fail: #dc2626;
+  --mg-fail-bg: #fef2f2;
+  --mg-grade-a: #1c1c1c;
+  --mg-grade-b: #333333;
+  --mg-grade-c: #b45309;
+  --mg-grade-d: #f97316;
+  --mg-grade-f: #dc2626;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--mg-bg);
+  color: var(--mg-text);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--mg-dark);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

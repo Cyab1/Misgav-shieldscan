@@ -1,0 +1,44 @@
+.navbar {
+  background: var(--mg-dark);
+  padding: 0 2rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.navbar-name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-divider {
+  color: #555;
+  font-weight: 300;
+}
+
+.navbar-product {
+  color: #a0a0a0;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.navbar-tagline {
+  color: #555;
+  font-size: 13px;
+  font-weight: 300;
+}

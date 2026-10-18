@@ -1,0 +1,237 @@
+.home {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Hero ── */
+.home-hero {
+  width: 100%;
+  max-width: 680px;
+  padding: 72px 2rem 48px;
+  text-align: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: var(--mg-surface);
+  color: var(--mg-dark);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 99px;
+  border: 1px solid var(--mg-border);
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--mg-dark);
+  margin-bottom: 20px;
+}
+
+.hero-accent {
+  color: var(--mg-dark-mid);
+}
+
+.hero-sub {
+  font-size: 17px;
+  color: var(--mg-text-muted);
+  max-width: 520px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ── Scan form ── */
+.scan-form {
+  width: 100%;
+}
+
+.scan-input-row {
+  display: flex;
+  border: 1.5px solid var(--mg-border);
+  border-radius: 8px;
+  background: var(--mg-white);
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.scan-input-row:focus-within {
+  border-color: var(--mg-dark);
+  box-shadow: 0 0 0 3px rgba(28, 28, 28, 0.08);
+}
+
+.scan-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: var(--mg-dark);
+  background: transparent;
+}
+
+.scan-input::placeholder {
+  color: #a0a0a0;
+}
+.scan-input:disabled {
+  opacity: 0.6;
+}
+
+.scan-btn {
+  background: var(--mg-dark);
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.scan-btn:hover:not(:disabled) {
+  background: var(--mg-dark-mid);
+}
+.scan-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.scan-error {
+  margin-top: 10px;
+  color: var(--mg-fail);
+  font-size: 14px;
+  text-align: left;
+}
+
+.scan-error-link {
+  color: var(--mg-dark);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ── Scanning animation ── */
+.scanning-state {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.scan-ring {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.scan-ring-inner {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scan-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scan-icon {
+  font-size: 28px;
+  position: relative;
+  z-index: 1;
+}
+.scan-step {
+  color: var(--mg-text-muted);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* ── Checks strip ── */
+.home-checks {
+  width: 100%;
+  max-width: 680px;
+  padding: 0 2rem 48px;
+  text-align: center;
+}
+
+.checks-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #a0a0a0;
+  margin-bottom: 14px;
+}
+
+.checks-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.check-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--mg-white);
+  border: 1px solid var(--mg-border);
+  border-radius: 99px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: var(--mg-text-muted);
+  font-weight: 300;
+}
+
+/* ── Footer ── */
+.home-footer {
+  margin-top: auto;
+  padding: 24px 2rem;
+  font-size: 13px;
+  color: #a0a0a0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 300;
+}
+
+.home-footer strong {
+  color: var(--mg-text-muted);
+  font-weight: 600;
+}
+.footer-dot {
+  color: #d0d0d0;
+}
+.footer-link {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: var(--mg-dark);
+}
